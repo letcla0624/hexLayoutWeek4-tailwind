@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>
-    <%- title %>
+    門市據點 - 詳細資訊
   </title>
   <link rel="stylesheet" href="./assets/style/all.css" />
 </head>
@@ -43,7 +43,53 @@
     </nav>
   </header>
 
-  <%- contents %>
+  
+<main>
+  <div class="container mx-auto py-20">
+    <h1 class="text-2xl font-bold border-l-8 border-red px-4 md:text-5xl mb-8">門市據點</h1>
+    <div class="flex items-center mb-10">
+      <span class="whitespace-nowrap md:text-2xl mr-4">選擇地區</span>
+      <select class="form-select form-default w-full border-gray-300 md:max-w-[304px]">
+        <option value="0" disabled>請選擇據點</option>
+        <option value="台北中山旗艦店" selected>台北中山旗艦店</option>
+        <option value="台北綠園店">台北綠園店</option>
+        <option value="台中清水旗艦店">台中清水旗艦店</option>
+        <option value="高雄中正形象店">高雄中正形象店</option>
+        <option value="高雄夢時代店">高雄夢時代店</option>
+      </select>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-6">
+      <div class="text-xl text-neutral-800 lg:w-2/5">
+        <div class="flex flex-col gap-0 md:flex-row md:gap-6 lg:flex-col lg:gap-0">
+          <img src="./assets/images/store-1.png" alt="BJ41600S" class="md:w-1/2 lg:w-full">
+          <div class="md:w-1/2 lg:w-full">
+            <h2 class="text-2xl border py-2 px-6">台北中山旗艦店</h2>
+            <ul class="border px-6 py-4 space-y-2">
+              <li class="flex items-center">
+                <span class="material-symbols-outlined mr-2"> call </span>
+                <p>電話：(02)000-1234</p>
+              </li>
+              <li class="flex items-center">
+                <span class="material-symbols-outlined mr-2">schedule</span>
+                <p>營業時間：10:00-21:00</p>
+              </li>
+              <li class="flex">
+                <span class="material-symbols-outlined mr-2">location_on</span>
+                <p>地址：台北市中山區南京東路25巷2-1號</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-3/5">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.464947732701!2d121.52090641601364!3d25.052225743712373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9695740a337%3A0xb857e46ca66c04b0!2zR0FMRVJJRSBCaXN0cm8g5a625qiC5Yip5bCP6YWS6aSo!5e0!3m2!1szh-TW!2stw!4v1658566701196!5m2!1szh-TW!2stw"
+          width="800" height="600" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" class="h-[414px] lg:h-full"></iframe>
+      </div>
+    </div>
+  </div>
+</main>
 
     <footer class="footer bg-red py-6 md:pt-12 md:pb-8">
       <div class=" container mx-auto">

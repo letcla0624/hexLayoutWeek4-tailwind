@@ -1,9 +1,49 @@
----
-title: 系列邊框 - OPTICAL
-layout: ./app/layout.ejs
-engine: ejs
----
+<!DOCTYPE html>
+<html lang="zh-TW">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    系列邊框 - OPTICAL
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css" />
+</head>
+
+<body>
+  <header class="sticky top-0 left-0 right-0 bg-red py-1 z-50">
+    <nav class="container mx-auto flex justify-between items-center">
+      <div class="flex justify-between items-center w-full md:w-auto py-3">
+        <a href="index.html">
+          <img src="./assets/images/logo-white.png" alt="logo" class="w-20 h-12" />
+        </a>
+        <span
+          class="menu-icon material-symbols-outlined text-white text-4xl w-10 h-10 flex justify-center items-center cursor-pointer md:hidden">menu</span>
+      </div>
+      <ul
+        class="menu absolute top-full left-0 bg-red w-full h-0 overflow-hidden text-center flex flex-wrap items-center md:static md:w-auto md:h-auto md:space-x-16">
+        <li class="w-1/2 border md:w-auto md:border-0">
+          <a href="products_1.html"
+            class="block w-full text-xl text-white py-3 hover:bg-red-dark md:hover:bg-transparent">系列鏡框</a>
+        </li>
+        <li class="w-1/2 border md:w-auto md:border-0">
+          <a href="store.html"
+            class="block w-full text-xl text-white py-3 hover:bg-red-dark md:hover:bg-transparent">門市據點</a>
+        </li>
+        <li class="w-1/2 border md:w-auto md:border-0">
+          <a href="blog.html"
+            class="block w-full text-xl text-white py-3 hover:bg-red-dark md:hover:bg-transparent">部落格</a>
+        </li>
+        <li class="w-1/2 border md:w-auto md:border-0">
+          <a href="qa.html"
+            class="block w-full text-xl text-white py-3 hover:bg-red-dark md:hover:bg-transparent">常見問題</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  
 <main>
   <section>
     <div class="md:container mx-auto">
@@ -180,3 +220,64 @@ engine: ejs
     </div>
   </section>
 </main>
+
+    <footer class="footer bg-red py-6 md:pt-12 md:pb-8">
+      <div class=" container mx-auto">
+        <div class="flex justify-between items-start">
+          <div>
+            <ul class="nav items-center space-x-12 hidden md:flex md:mb-9">
+              <li><a href="index.html" class="text-white">首頁</a></li>
+              <li><a href="products_1.html" class="text-white">系列鏡框</a></li>
+              <li><a href="store.html" class="text-white">門市據點</a></li>
+              <li><a href="blog.html" class="text-white">部落格</a></li>
+              <li><a href="qa.html" class="text-white">常見問題</a></li>
+            </ul>
+            <ul class="pb-6 md:pb-8">
+              <li class="mb-2">
+                <a href="tel:0800000000" class="text-white flex items-center md:text-4xl">
+                  <span class="material-symbols-outlined md:text-4xl pr-5"> call </span>
+                  <p>0800-000-000</p>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:glasses@business.com" class="text-white flex items-center md:text-4xl">
+                  <span class="material-symbols-outlined md:text-4xl pr-5"> mail </span>
+                  <p>glasses@business.com</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="social-icon flex items-center space-x-2 md:space-x-8 md:-mt-3">
+            <li>
+              <a href="#" class="block w-6 md:w-12">
+                <img src="./assets/images/ic-social-fb.png" alt="facebook" class="mw-full" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block w-6 md:w-12">
+                <img src="./assets/images/ic_social_ig.png" alt="instagram" class="mw-full" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block w-6 md:w-12">
+                <img src="./assets/images/ic_social_line.png" alt="line" class="mw-full" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="coptright justify-between items-center border-t pt-4 md:flex md:pt-8">
+          <p class="text-white mb-2 md:mb-0">
+            Copyright © 2020 Glasses.All rights reserved.
+          </p>
+          <ul class="block items-center space-y-2 md:flex md:space-x-12 md:space-y-0">
+            <li><a href="#" class="text-white">隱私權政策</a></li>
+            <li><a href="#" class="text-white">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

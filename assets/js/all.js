@@ -1,10 +1,12 @@
-const menu = document.querySelector(".menu");
-const menuIcon = document.querySelector(".menu-icon");
-let openMenu = false;
+"use strict";
 
+var menu = document.querySelector(".menu");
+var menuIcon = document.querySelector(".menu-icon");
+var openMenu = false;
 window.addEventListener("resize", reportWindowSize);
-menuIcon.addEventListener("click", () => {
+menuIcon.addEventListener("click", function () {
   openMenu = !openMenu;
+
   if (openMenu) {
     menu.classList.remove("h-0");
     menu.classList.add("h-auto");
@@ -20,3 +22,4 @@ function reportWindowSize() {
   menuIcon.innerText = "menu";
   openMenu = false;
 }
+//# sourceMappingURL=all.js.map
