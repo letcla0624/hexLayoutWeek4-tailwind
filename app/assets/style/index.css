@@ -1,0 +1,9 @@
+.banner {
+  background: url("../images/home-header-sm.png") center center no-repeat;
+  background-size: cover;
+  height: 396px;
+}
+.design {
+  background: url("../images/index-bg-sm.png") center center no-repeat;
+  background-size: cover;
+}

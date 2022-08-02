@@ -1,0 +1,108 @@
+---
+title: 部落格內頁
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+<main class="md:pb-20">
+  <section class="bg-red-dark">
+    <div class="container mx-auto flex justify-between items-center md:text-xl">
+      <ul class="flex gap-6 md:gap-12 overflow-x-scroll">
+        <li><a href="#" class="block text-white whitespace-nowrap py-3">最新消息</a></li>
+        <li><a href="#" class="block text-white whitespace-nowrap py-3">特別企劃</a></li>
+        <li><a href="#" class="block text-white whitespace-nowrap py-3">新品上市</a></li>
+        <li><a href="#" class="block text-white whitespace-nowrap py-3">鏡框小知識</a></li>
+      </ul>
+      <span
+        class="material-symbols-outlined text-white text-3xl w-10 h-10 cursor-pointer hidden md:flex justify-center items-center">search</span>
+    </div>
+  </section>
+  <section class="pb-12">
+    <div class="container mx-auto">
+      <ul class="flex mt-4 mb-2">
+        <li class="flex"><a href="index.html">首頁</a><span class="px-1"> / </span></li>
+        <li class="flex"><a href="blog.html">部落格</a><span class="px-1"> / </span></li>
+        <li class="flex"><a href="#">特別企劃</a><span class="px-1"> / </span></li>
+        <li class="flex"><a href="#" class="text-red">情人特別企劃</a></li>
+      </ul>
+      <ul class="flex gap-4 mb-2">
+        <li class="font-bold text-red md:text-2xl">#special</li>
+        <li class="font-bold text-red md:text-2xl">#event</li>
+      </ul>
+      <div class="flex gap-6">
+        <div class="md:w-3/4 lg:w-2/3">
+          <h1 class="text-2xl md:text-5xl">情人特別企劃</h1>
+          <h2 class="font-medium mb-4 md:text-2xl">2020 Valentine’s Special</h2>
+          <div class="text-neutral-600">
+            <article>
+              <img src="./assets/images/blogpage-1.png" alt="blogpage-1">
+              <p class="mt-2 mb-4 md:mt-4 md:mb-6 lg:mt-2 lg:mb-10">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>
+                本次拍攝的鏡框款式與 NEEDS
+                CLASSIC
+                聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+            </article>
+            <article>
+              <img src="./assets/images/blogpage-2.png" alt="blogpage-2">
+              <p class="mt-2 mb-4 md:mt-4 md:mb-6 lg:mt-2 lg:mb-10">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>
+                本次拍攝的鏡框款式與 NEEDS
+                CLASSIC
+                聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+            </article>
+            <article>
+              <img src="./assets/images/blogpage-3.png" alt="blogpage-3">
+              <p class="mt-2 mb-4 md:mt-4 md:mb-6 lg:mt-2 lg:mb-10">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>
+                本次拍攝的鏡框款式與 NEEDS
+                CLASSIC
+                聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+            </article>
+            <article>
+              <img src="./assets/images/blogpage-4.png" alt="blogpage-4">
+              <p class="mt-2 mb-4 md:mt-4 md:mb-6 lg:mt-2 lg:mb-10">2/14(五)-2/20(日)<br> 至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個<br>
+                期間優惠還有~~持他牌鏡框更換鏡片<br>
+                薄型非球面鏡片折300元<br> 濾藍光鏡片折500元<br> 快快帶上另一半<br> 讓彼此每一次睜開眼，都被愛的視線包圍!</p>
+            </article>
+          </div>
+        </div>
+        <div class="hidden text-red font-bold md:block md:w-1/5">
+          <div class="flex items-center mb-2 lg:text-3xl">
+            <span
+              class="material-symbols-outlined font-bold lg:text-4xl lg:w-12 lg:h-12 flex justify-center items-center">label</span>
+            <h3>TAGS</h3>
+          </div>
+          <ul class="flex flex-wrap gap-x-4 lg:gap-x-6 lg:gap-y-1">
+            <li><a href="#" class="block lg:text-2xl">#special</a></li>
+            <li><a href="#" class="block lg:text-2xl">#sale</a></li>
+            <li><a href="#" class="block lg:text-2xl">#new_item</a></li>
+            <li><a href="#" class="block lg:text-2xl">#interview</a></li>
+            <li><a href="#" class="block lg:text-2xl">#trivia</a></li>
+            <li><a href="#" class="block lg:text-2xl">#news</a></li>
+            <li><a href="#" class="block lg:text-2xl">#event</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hidden md:block lg:w-2/3">
+        <div class="flex items-center mb-4">
+          <p class="font-bold mr-4">Share</p>
+          <ul class="flex gap-4">
+            <li><a href="#"><img src="./assets/images/logo-facebook.png" alt="fb" class="w-6"></a></li>
+            <li><a href="#"><img src="./assets/images/logo-instagram.png" alt="ig" class="w-6"></a></li>
+          </ul>
+        </div>
+        <div class="flex justify-between items-center border-t border-black pt-6">
+          <a href="#" class="flex items-center text-black">
+            <span class="material-symbols-outlined">
+              arrow_back
+            </span>
+            <span class="ml-2">上一篇：街頭潮人訪問 1</span>
+          </a>
+          <a href="#" class="flex items-center text-black">
+            <span class="mr-2">下一篇：街頭潮人訪問 2</span>
+            <span class="material-symbols-outlined">
+              arrow_forward
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
