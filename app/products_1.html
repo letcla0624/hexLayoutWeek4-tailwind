@@ -7,14 +7,12 @@ engine: ejs
 <main>
   <section>
     <div class="md:container mx-auto">
-      <ul class="nav-tab grid grid-cols-3 text-center">
-        <li class="border active"><a href="products_1.html"
-            class="font-medium text-black block pt-4 pb-2 md:text-3xl md:pt-6 md:pb-4">OPTICAL</a></li>
-        <li class="border"><a href="products_2.html"
-            class="font-medium text-black block pt-4 pb-2 md:text-3xl md:pt-6 md:pb-4">SUNGLASSES</a>
+      <ul class="grid grid-cols-3 text-center">
+        <li class="border active"><a href="products_1.html" class="nav-tab nav-tab-active">OPTICAL</a>
         </li>
-        <li class="border"><a href="#"
-            class="font-medium text-black block pt-4 pb-2 md:text-3xl md:pt-6 md:pb-4">FUNCTIONAL</a></li>
+        <li class="border"><a href="products_2.html" class="nav-tab">SUNGLASSES</a>
+        </li>
+        <li class="border"><a href="#" class="nav-tab">FUNCTIONAL</a></li>
       </ul>
     </div>
   </section>
@@ -166,17 +164,15 @@ engine: ejs
           </ul>
         </li>
       </ul>
-      <div class="page">
-        <ul class="flex justify-center">
-          <li class="prev"><a href="#" class="block md:text-lg sm:px-4 p-3 border border-r-0 border-black">上一頁</a></li>
-          <li><a href="#" class="block md:text-lg sm:px-4 p-3 border border-r-0 border-black">1</a></li>
-          <li class="active"><a href="#" class="block md:text-lg sm:px-4 p-3 border border-r-0 border-black">2</a></li>
-          <li><a href="#" class="block md:text-lg sm:px-4 p-3 border border-r-0 border-black">3</a></li>
-          <li><a href="#" class="block md:text-lg sm:px-4 p-3 border border-r-0 border-black">4</a></li>
-          <li><a href="#" class="block md:text-lg sm:px-4 p-3 border border-r-0 border-black">5</a></li>
-          <li class="next"><a href="#" class="block md:text-lg sm:px-4 p-3 border border-black">下一頁</a></li>
-        </ul>
-      </div>
+      <ul class="flex justify-center">
+        <li class="prev"><a href="#" class="block page">上一頁</a></li>
+        <li><a href="#" class="block page">1</a></li>
+        <li class="active"><a href="#" class="block page page-active">2</a></li>
+        <li><a href="#" class="block page">3</a></li>
+        <li><a href="#" class="block page">4</a></li>
+        <li><a href="#" class="block page">5</a></li>
+        <li class="next"><a href="#" class="block page border-r">下一頁</a></li>
+      </ul>
     </div>
   </section>
 </main>
