@@ -829,10 +829,6 @@ a:hover{
 .z-50{
   z-index: 50;
 }
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -1042,14 +1038,11 @@ a:hover{
 .border-l-8{
   border-left-width: 8px;
 }
-.border-r-0{
-  border-right-width: 0px;
+.border-r{
+  border-right-width: 1px;
 }
 .border-t{
   border-top-width: 1px;
-}
-.border-r{
-  border-right-width: 1px;
 }
 .border-red{
   --tw-border-opacity: 1;
@@ -1102,9 +1095,6 @@ a:hover{
 }
 .bg-no-repeat{
   background-repeat: no-repeat;
-}
-.p-3{
-  padding: 0.75rem;
 }
 .p-2{
   padding: 0.5rem;
@@ -1279,14 +1269,6 @@ a:hover{
 .hover\:bg-red-dark:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(101 3 0 / var(--tw-bg-opacity));
-}
-
-@media (min-width: 576px){
-
-  .sm\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 }
 
 @media (min-width: 768px){
@@ -1506,11 +1488,6 @@ a:hover{
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.875rem;
-  }
-
-  .md\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
   }
 
   .md\:text-2xl{
