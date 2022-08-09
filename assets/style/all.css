@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 
-@import "main.css";
-@import "index.css";
-@import "products.css";
-
 /*
 ! tailwindcss v3.1.7 | MIT License | https://tailwindcss.com
 */
@@ -394,6 +390,10 @@ video {
   height: auto;
 }
 
+html {
+    font-family: "Roboto", "Noto Sans TC", system-ui, sans-serif;
+  }
+
 a:hover{
   opacity: 0.8;
 }
@@ -540,8 +540,10 @@ a:hover{
 }
 .container{
   width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 @media (min-width: 576px){
 
@@ -747,6 +749,64 @@ a:hover{
   width: 1.5rem;
   border-radius: 0.25rem;
 }
+.page{
+  border-width: 1px;
+  border-right-width: 0px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  padding: 0.75rem;
+}
+.page:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+@media (min-width: 576px){
+
+  .page{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 768px){
+
+  .page{
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+}
+.page-active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.nav-tab{
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.nav-tab:hover{
+  border-bottom-width: 8px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(170 6 1 / var(--tw-border-opacity));
+}
+@media (min-width: 768px){
+
+  .nav-tab{
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+.nav-tab-active{
+  border-bottom-width: 8px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(170 6 1 / var(--tw-border-opacity));
+}
 .absolute{
   position: absolute;
 }
@@ -754,17 +814,17 @@ a:hover{
   position: -webkit-sticky;
   position: sticky;
 }
-.top-0{
+.inset-0{
   top: 0px;
-}
-.left-0{
-  left: 0px;
-}
-.right-0{
   right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 .top-full{
   top: 100%;
+}
+.left-0{
+  left: 0px;
 }
 .z-50{
   z-index: 50;
@@ -809,6 +869,9 @@ a:hover{
 .mb-12{
   margin-bottom: 3rem;
 }
+.mt-1{
+  margin-top: 0.25rem;
+}
 .ml-1{
   margin-left: 0.25rem;
 }
@@ -846,6 +909,9 @@ a:hover{
 }
 .h-10{
   height: 2.5rem;
+}
+.h-\[396px\]{
+  height: 396px;
 }
 .h-full{
   height: 100%;
@@ -982,6 +1048,9 @@ a:hover{
 .border-t{
   border-top-width: 1px;
 }
+.border-r{
+  border-right-width: 1px;
+}
 .border-red{
   --tw-border-opacity: 1;
   border-color: rgb(170 6 1 / var(--tw-border-opacity));
@@ -1021,6 +1090,18 @@ a:hover{
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-\[url\(\'\.\.\/images\/home-header-sm\.png\'\)\]{
+  background-image: url('../images/home-header-sm.png');
+}
+.bg-\[url\(\'\.\.\/images\/index-bg-sm\.png\'\)\]{
+  background-image: url('../images/index-bg-sm.png');
+}
+.bg-cover{
+  background-size: cover;
+}
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 .p-3{
   padding: 0.75rem;
@@ -1110,27 +1191,27 @@ a:hover{
   text-align: right;
 }
 .text-xl{
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 .text-3xl{
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 .text-2xl{
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
 }
 .text-4xl{
-  font-size: 36px;
-  line-height: 54px;
+  font-size: 2.25rem;
+  line-height: 3.375rem;
 }
 .text-\[84px\]{
   font-size: 84px;
 }
 .text-5xl{
-  font-size: 48px;
-  line-height: 72px;
+  font-size: 3rem;
+  line-height: 4.5rem;
 }
 .font-bold{
   font-weight: 700;
@@ -1175,12 +1256,6 @@ a:hover{
   main {
     min-height: calc(100vh - 345px - 80px);
   }
-  .banner {
-    height: 787px;
-  }
-  .design {
-    background: url("../images/index-bg.png") center center no-repeat;
-  }
   .double {
     content: url("../images/home-section4-1.png");
   }
@@ -1201,13 +1276,6 @@ a:hover{
   }
 }
 
-@media (min-width: 1296px) {
-  .banner {
-    background: url("../images/home-header.png") center center no-repeat;
-    height: calc(100vh - 80px);
-  }
-}
-
 .hover\:bg-red-dark:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(101 3 0 / var(--tw-bg-opacity));
@@ -1225,8 +1293,10 @@ a:hover{
 
   .md\:container{
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
   }
 
   @media (min-width: 576px){
@@ -1280,6 +1350,10 @@ a:hover{
     margin-bottom: 1.5rem;
   }
 
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:mb-9{
     margin-bottom: 2.25rem;
   }
@@ -1308,6 +1382,10 @@ a:hover{
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:h-\[787px\]{
+    height: 787px;
   }
 
   .md\:h-auto{
@@ -1347,6 +1425,12 @@ a:hover{
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+
+  .md\:items-center{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .md\:gap-12{
@@ -1389,6 +1473,10 @@ a:hover{
     border-width: 0px;
   }
 
+  .md\:bg-\[url\(\'\.\.\/images\/index-bg\.png\'\)\]{
+    background-image: url('../images/index-bg.png');
+  }
+
   .md\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -1410,51 +1498,43 @@ a:hover{
     padding-top: 2rem;
   }
 
-  .md\:pt-6{
-    padding-top: 1.5rem;
-  }
-
-  .md\:pb-4{
-    padding-bottom: 1rem;
-  }
-
   .md\:text-5xl{
-    font-size: 48px;
-    line-height: 72px;
+    font-size: 3rem;
+    line-height: 4.5rem;
   }
 
   .md\:text-xl{
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
 
   .md\:text-lg{
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
   }
 
   .md\:text-2xl{
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-4xl{
-    font-size: 36px;
-    line-height: 54px;
+    font-size: 2.25rem;
+    line-height: 3.375rem;
   }
 
   .md\:text-6xl{
-    font-size: 64px;
-    line-height: 96px;
-  }
-
-  .md\:text-3xl{
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 4rem;
+    line-height: 6rem;
   }
 
   .md\:text-\[42px\]{
     font-size: 42px;
+  }
+
+  .md\:text-3xl{
+    font-size: 2rem;
+    line-height: 3rem;
   }
 
   .md\:leading-\[63px\]{
@@ -1565,22 +1645,29 @@ a:hover{
   }
 
   .lg\:text-3xl{
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 
   .lg\:text-xl{
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
 
   .lg\:text-4xl{
-    font-size: 36px;
-    line-height: 54px;
+    font-size: 2.25rem;
+    line-height: 3.375rem;
   }
 
   .lg\:text-2xl{
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1296px){
+
+  .xl\:bg-\[url\(\'\.\.\/images\/home-header\.png\'\)\]{
+    background-image: url('../images/home-header.png');
   }
 }
